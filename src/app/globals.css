@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Barqora dark luxury palette */
+    --background: 240 20% 4%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 18% 7%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 18% 7%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 217 91% 60%;              /* Tailwind blue-500 */
+    --primary-foreground: 0 0% 100%;     /* white stays readable */
+    --primary-glow: 213 94% 78%;
+
+    --secondary: 220 90% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 240 15% 12%;
+    --muted-foreground: 240 8% 65%;
+
+    --accent: 220 90% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 15% 14%;
+    --input: 240 15% 12%;
+    --ring: 265 90% 65%;
+
+    --radius: 0.875rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(189, 90%, 60%), hsl(220 90% 55%));
+    --gradient-glow: radial-gradient(circle at 30% 20%, hsla(211, 90%, 50%, 0.35), transparent 60%),
+                     radial-gradient(circle at 80% 80%, hsl(220 90% 50% / 0.3), transparent 55%);
+    --gradient-text: linear-gradient(135deg, hsl(0 0% 100%), hsl(191, 85%, 71%) 50%, hsl(220 90% 75%));
+    --gradient-card: linear-gradient(160deg, hsl(240 18% 9% / 0.9), hsl(240 22% 5% / 0.9));
+    --gradient-border: linear-gradient(135deg, hsla(224, 90%, 60%, 0.5), hsl(220 90% 60% / 0.2));
+
+    /* Shadows */
+    --shadow-glow: 0 0 60px hsla(207, 90%, 60%, 0.3);
+    --shadow-elegant: 0 20px 60px -20px hsla(221, 90%, 40%, 0.4);
+    --shadow-card: 0 10px 40px -10px hsl(240 30% 0% / 0.6);
+
+    /* Transitions */
+    --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+    background-image: var(--gradient-glow);
+    background-attachment: fixed;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .bg-gradient-primary {
+    background: var(--gradient-primary);
+  }
+  .glass {
+    background: hsl(240 18% 8% / 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid hsl(0 0% 100% / 0.06);
+  }
+  .glow-border {
+    position: relative;
+  }
+  .glow-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: var(--gradient-border);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    pointer-events: none;
+  }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+  .shadow-elegant { box-shadow: var(--shadow-elegant); }
+}
