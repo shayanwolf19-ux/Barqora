@@ -82,9 +82,11 @@ const Testimonials = () => {
   return (
     <section id="testimonials" className="py-32 relative">
       <div className="container mx-auto px-6">
-        <div className="max-w-2xl mx-auto text-center mb-20">
-          <span className="text-sm font-medium text-blue-300 uppercase tracking-widest">Client love</span>
-          <h2 className="font-display text-4xl md:text-6xl font-bold mt-4">
+        <div className="max-w-2xl mx-auto text-center mb-20" >
+          <span className="text-sm font-medium text-blue-300 uppercase tracking-widest" data-aos="fade-up">
+            Client love
+          </span>
+          <h2 className="font-display text-4xl md:text-6xl font-bold mt-4" data-aos="fade-up">
             Words from <span className="text-gradient">our partners</span>
           </h2>
         </div>

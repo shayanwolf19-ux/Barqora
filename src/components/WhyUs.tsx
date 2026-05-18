@@ -15,8 +15,8 @@ const WhyUs = () => {
     <section id="why" className="py-32 relative">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto text-center mb-20">
-          <span className="text-sm font-medium text-blue-300 uppercase tracking-widest">Why Barqora</span>
-          <h2 className="font-display text-4xl md:text-6xl font-bold mt-4">
+          <span className="text-sm font-medium text-blue-300 uppercase tracking-widest" data-aos="fade-up">Why Barqora</span>
+          <h2 className="font-display text-4xl md:text-6xl font-bold mt-4" data-aos="fade-up">
             Digital solutions <span className="text-gradient">that grow brands</span>
           </h2>
         </div>
@@ -25,6 +25,7 @@ const WhyUs = () => {
           {items.map((it, i) => (
             <div
               key={it.title}
+               data-aos={i % 2 === 0 ? "fade-right" : "fade-left"}
               className={`flex gap-5 glass rounded-3xl p-8 hover:bg-card/80 transition-colors ${
                 i === items.length - 1
                   ? "md:col-span-2 md:w-full md:max-w-[calc(50%-12px)] md:mx-auto"

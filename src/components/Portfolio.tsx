@@ -60,17 +60,18 @@ const Portfolio = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16 gap-6">
           <div>
-            <span className="text-sm font-medium text-blue-300 uppercase tracking-widest">Industries We Work With</span>
-            <h2 className="font-display text-4xl md:text-6xl font-bold mt-4">
+            <span className="text-sm font-medium text-blue-300 uppercase tracking-widest" data-aos="fade-up">Industries We Work With</span>
+            <h2 className="font-display text-4xl md:text-6xl font-bold mt-4 mb-6 leading-tight"  data-aos="fade-up">
               Work we're <span className="text-gradient">proud of</span>
             </h2>
           </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
-          {items.map((it) => (
+          {items.map((it, index) => (
             <div
               key={it.title}
+              data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
               className="group relative overflow-hidden rounded-3xl glow-border glass cursor-pointer"
             >
               <div className="aspect-[4/3] overflow-hidden">

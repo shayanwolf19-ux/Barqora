@@ -6,16 +6,16 @@ const About = () => {
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <span className="text-sm font-medium text-blue-300 uppercase tracking-widest">About Barqora</span>
-            <h2 className="font-display text-4xl md:text-6xl font-bold mt-4 mb-6 leading-tight">
+            <span className="text-sm font-medium text-blue-300 uppercase tracking-widest" data-aos="fade-up">About Barqora</span>
+            <h2 className="font-display text-4xl md:text-6xl font-bold mt-4 mb-6 leading-tight"  data-aos="fade-up">
               A growth partner <br /> built for the <span className="text-gradient">digital era</span>.
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6"  data-aos="fade-up">
               Barqora is a creative digital agency built to help modern businesses grow online through powerful websites, smart marketing, strong branding, and engaging content.
 
               We work with businesses that want to build a professional online presence, attract more customers, and convert visitors into real leads and sales. From website design and social media growth to paid advertising, SEO, branding, and creative content production, Barqora provides complete digital solutions under one roof.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed"  data-aos="fade-up">
               Our goal is simple: to make your brand look better, reach the right audience, and grow faster in the digital world.
             </p>
           </div>

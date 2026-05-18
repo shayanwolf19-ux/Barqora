@@ -33,16 +33,16 @@ const Hero = () => {
             Barqora is a full-service digital marketing agency that turns ad spend into pipeline, followers into buyers, and brands into category leaders.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+          {/* <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
             <Button variant="hero" size="xl" asChild>
               <a href="#contact">Book a Free Strategy Call <ArrowRight className="ml-1 h-5 w-5" /></a>
             </Button>
             <Button variant="glass" size="xl" asChild>
               <a href="#portfolio">See Our Work</a>
             </Button>
-          </div>
+          </div> */}
 
-          <p className="mt-6 text-xs uppercase tracking-[0.25em] text-muted-foreground/70 animate-fade-in-up" style={{ animationDelay: "0.5s" }}>
+          {/* <p className="mt-6 text-xs uppercase tracking-[0.25em] text-muted-foreground/70 animate-fade-in-up" style={{ animationDelay: "0.5s" }}>
             Trusted by D2C, SaaS & E-commerce brands across 12 countries
           </p>
 
@@ -57,7 +57,7 @@ const Hero = () => {
                 <div className="text-xs md:text-sm text-muted-foreground mt-1">{s.l}</div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

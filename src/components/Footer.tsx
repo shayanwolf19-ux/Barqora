@@ -35,7 +35,7 @@ const Footer = () => {
 
       <div className="container mx-auto px-6 relative">
         {/* CTA strip */}
-        <div className="glass glow-border rounded-3xl p-8 md:p-12 mb-20 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        {/* <div className="glass glow-border rounded-3xl p-8 md:p-12 mb-20 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <h3 className="font-display text-2xl md:text-3xl font-bold leading-tight">
               Ready to make your brand <span className="text-gradient">unmissable?</span>
@@ -48,7 +48,7 @@ const Footer = () => {
           >
             Book a free strategy call <ArrowUpRight className="h-4 w-4" />
           </a>
-        </div>
+        </div> */}
 
         {/* Main grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-12 gap-10 lg:gap-8 mb-16">
@@ -61,11 +61,11 @@ const Footer = () => {
               A premium digital marketing agency engineering measurable growth for ambitious brands worldwide.
             </p>
             <div className="space-y-2.5 text-sm">
-              <a href="mailto:hello@barqora.com" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
-                <Mail className="h-4 w-4 text-primary" /> hello@barqora.com
+              <a href="mailto:info.barqora@gmail.com" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
+                <Mail className="h-4 w-4 text-primary" /> info.barqora@gmail.com
               </a>
               <div className="flex items-center gap-3 text-muted-foreground">
-                <MapPin className="h-4 w-4 text-primary" /> Dubai · London · Remote
+                <MapPin className="h-4 w-4 text-primary" /> Sines,Nust H-12 Sector Islamabad
               </div>
             </div>
           </div>
@@ -99,7 +99,7 @@ const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div className="col-span-2 lg:col-span-3">
+          {/* <div className="col-span-2 lg:col-span-3">
             <h4 className="font-display text-sm font-semibold uppercase tracking-widest mb-5 text-foreground">Stay in the loop</h4>
             <p className="text-sm text-muted-foreground mb-4">Marketing insights, fresh case studies, and growth playbooks — monthly.</p>
             <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
@@ -116,7 +116,7 @@ const Footer = () => {
                 Join
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
 
         {/* Bottom bar */}
@@ -139,7 +139,7 @@ const Footer = () => {
           <div className="flex gap-6 text-sm text-muted-foreground">
             <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
             <a href="#" className="hover:text-foreground transition-colors">Terms</a>
-            <a href="#" className="hover:text-foreground transition-colors">Cookies</a>
+            {/* <a href="#" className="hover:text-foreground transition-colors">Cookies</a> */}
           </div>
         </div>
       </div>

@@ -14,16 +14,17 @@ const Services = () => {
     <section id="services" className="py-32 relative">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto text-center mb-20">
-          <span className="text-sm font-medium text-blue-300 uppercase tracking-widest">What we do</span>
-          <h2 className="font-display text-4xl md:text-6xl font-bold mt-4">
+          <span className="text-sm font-medium text-blue-300 uppercase tracking-widest" data-aos="fade-up">What we do</span>
+          <h2 className="font-display text-4xl md:text-6xl font-bold mt-4" data-aos="fade-up">
             At Barqora , we help  <span className="text-gradient"> Businesses Grow Online</span>
           </h2>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((s) => (
+          {services.map((s, index) => (
             <div
               key={s.title}
+              data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
               className="group relative glass glow-border rounded-3xl p-8 hover:-translate-y-2 transition-all duration-500 overflow-hidden"
             >
               <div className="absolute -top-20 -right-20 w-40 h-40 rounded-full bg-primary/0 group-hover:bg-primary/10 blur-3xl transition-all duration-700" />
