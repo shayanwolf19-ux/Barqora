@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, MapPin, ArrowUpRight, Instagram, Linkedin, Twitter, Facebook } from "lucide-react";
+import { Mail, MapPin, ArrowUpRight, Instagram, Linkedin, Twitter, Facebook, Phone } from "lucide-react";
 import logo from "@/assets/barqora-logo.png";
 
 const services = [
@@ -64,6 +64,9 @@ const Footer = () => {
               <a href="mailto:info.barqora@gmail.com" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
                 <Mail className="h-4 w-4 text-primary" /> info.barqora@gmail.com
               </a>
+               <a href="tel:+923001234567" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
+    <Phone className="h-4 w-4 text-primary" /> +92 334 8582082
+  </a>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <MapPin className="h-4 w-4 text-primary" /> Sines,Nust H-12 Sector Islamabad
               </div>
@@ -136,11 +139,11 @@ const Footer = () => {
               </a>
             ))}
           </div>
-          <div className="flex gap-6 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
-            <a href="#" className="hover:text-foreground transition-colors">Terms</a>
+          {/* <div className="flex gap-6 text-sm text-muted-foreground"> */}
+            {/* <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
+            <a href="#" className="hover:text-foreground transition-colors">Terms</a> */}
             {/* <a href="#" className="hover:text-foreground transition-colors">Cookies</a> */}
-          </div>
+          {/* </div> */}
         </div>
       </div>
     </footer>
