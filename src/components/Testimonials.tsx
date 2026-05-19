@@ -12,49 +12,41 @@ import {
 const reviews = [
   {
     name: "Sara Khalid",
-    role: "Founder, Aurelia Beauty",
     rating: 5,
     quote: "Barqora transformed our brand from invisible to iconic. Our DTC sales tripled in six months — the team is genuinely elite.",
   },
   {
     name: "Ahmed Rahman",
-    role: "Marketing Lead, Vertex SaaS",
     rating: 4.5,
     quote: "The paid media strategy alone paid for itself in the first month. Sharp, accountable, and creative beyond expectations.",
   },
   {
     name: "Lina Patel",
-    role: "CEO, Nova Studios",
     rating: 5,
     quote: "Working with Barqora feels like an extension of our team. They care about our numbers as much as we do — rare and refreshing.",
   },
   {
     name: "Daniyal Sheikh",
-    role: "Director, Orbit Logistics",
     rating: 4.5,
     quote: "Their SEO work moved us from page 4 to position 2 for our main keyword in under five months. Pure execution.",
   },
   {
     name: "Mariam Yousuf",
-    role: "Owner, Lumen Interiors",
     rating: 5,
     quote: "Stunning brand identity and a website that finally matches the quality of our work. Inquiries doubled in week one.",
   },
   {
     name: "Hassan Tariq",
-    role: "Co-founder, Plaid Finance",
     rating: 4.5,
     quote: "Communication is fast, reporting is honest, and the creative is consistently sharp. Easiest agency decision we've made.",
   },
   {
     name: "Zara Iqbal",
-    role: "Head of Growth, Brewly",
     rating: 5,
     quote: "Our social engagement grew 8x in three months. The content team genuinely understands our voice and audience.",
   },
   {
     name: "Omar Farooq",
-    role: "Founder, Stride Apparel",
     rating: 4.5,
     quote: "ROAS on our paid campaigns jumped from 1.8 to 4.6. They treat our budget like their own — we couldn't ask for more.",
   },
@@ -108,7 +100,7 @@ const Testimonials = () => {
                     </div>
                     <div>
                       <div className="font-medium">{r.name}</div>
-                      <div className="text-sm text-muted-foreground">{r.role}</div>
+                      {/* <div className="text-sm text-muted-foreground">{r.role}</div> */}
                     </div>
                   </div>
                 </div>
