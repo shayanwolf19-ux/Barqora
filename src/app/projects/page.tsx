@@ -67,7 +67,7 @@ export default function PortfolioPage() {
                   {it.tag}
                 </span>
                 <h3 className="font-display text-2xl font-semibold mb-2">{it.title}</h3>
-                <p className="text-muted-foreground text-sm">{it.desc}</p>
+                {/* <p className="text-muted-foreground text-sm">{it.desc}</p> */}
               </div>
             </div>
           ))}
