@@ -298,62 +298,67 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-5 gap-8">
-            {/* Map replaces the info cards */}
-            <div className="lg:col-span-2">
-              <div className="glass glow-border rounded-xl overflow-hidden h-[400px] lg:h-full lg:min-h-full">
-                <LeafletMap />
-              </div>
-            </div>
+         <div className="grid lg:grid-cols-2 gap-8">
+  {/* Map — left side, animates in from the left */}
+  <div data-aos="fade-right">
+    <div className="glass glow-border rounded-xl overflow-hidden h-[400px] lg:h-full lg:min-h-full">
+      <LeafletMap />
+    </div>
+  </div>
 
-            <form onSubmit={handleSubmit} className="lg:col-span-3 glass glow-border rounded-xl p-8 md:p-10 space-y-5">
-              <div>
-                <label htmlFor="name" className="text-sm text-muted-foreground mb-2 block">Your name</label>
-                <Input
-                  id="name"
-                  required
-                  disabled={loading}
-                  value={form.name}
-                  onChange={(e) => setForm({ ...form, name: e.target.value })}
-                  className="bg-muted/50 border-border h-12"
-                  placeholder="Enter your name"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="text-sm text-muted-foreground mb-2 block">Email</label>
-                <Input
-                  id="email"
-                  type="email"
-                  required
-                  disabled={loading}
-                  value={form.email}
-                  onChange={(e) => setForm({ ...form, email: e.target.value })}
-                  className="bg-muted/50 border-border h-12"
-                  placeholder="Enter your email"
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="text-sm text-muted-foreground mb-2 block">Tell us about your project</label>
-                <Textarea
-                  id="message"
-                  required
-                  disabled={loading}
-                  rows={5}
-                  value={form.message}
-                  onChange={(e) => setForm({ ...form, message: e.target.value })}
-                  className="bg-muted/50 border-border resize-none"
-                  placeholder="Tell us about your project..."
-                />
-              </div>
-              <Button type="submit" variant="hero" size="lg" className="w-full" disabled={loading}>
-                {loading ? (
-                  <>Sending... <Loader2 className="ml-2 h-4 w-4 animate-spin" /></>
-                ) : (
-                  <>Send Message <Send className="ml-2 h-4 w-4" /></>
-                )}
-              </Button>
-            </form>
-          </div>
+  {/* Form — right side, animates in from the right */}
+  <form
+    onSubmit={handleSubmit}
+    data-aos="fade-left"
+    className="glass glow-border rounded-xl p-8 md:p-10 space-y-5"
+  >
+    <div>
+      <label htmlFor="name" className="text-sm text-muted-foreground mb-2 block">Your name</label>
+      <Input
+        id="name"
+        required
+        disabled={loading}
+        value={form.name}
+        onChange={(e) => setForm({ ...form, name: e.target.value })}
+        className="bg-muted/50 border-border h-12"
+        placeholder="Enter your name"
+      />
+    </div>
+    <div>
+      <label htmlFor="email" className="text-sm text-muted-foreground mb-2 block">Email</label>
+      <Input
+        id="email"
+        type="email"
+        required
+        disabled={loading}
+        value={form.email}
+        onChange={(e) => setForm({ ...form, email: e.target.value })}
+        className="bg-muted/50 border-border h-12"
+        placeholder="Enter your email"
+      />
+    </div>
+    <div>
+      <label htmlFor="message" className="text-sm text-muted-foreground mb-2 block">Tell us about your project</label>
+      <Textarea
+        id="message"
+        required
+        disabled={loading}
+        rows={5}
+        value={form.message}
+        onChange={(e) => setForm({ ...form, message: e.target.value })}
+        className="bg-muted/50 border-border resize-none"
+        placeholder="Tell us about your project..."
+      />
+    </div>
+    <Button type="submit" variant="hero" size="lg" className="w-full" disabled={loading}>
+      {loading ? (
+        <>Sending... <Loader2 className="ml-2 h-4 w-4 animate-spin" /></>
+      ) : (
+        <>Send Message <Send className="ml-2 h-4 w-4" /></>
+      )}
+    </Button>
+  </form>
+</div>
         </div>
       </div>
     </section>

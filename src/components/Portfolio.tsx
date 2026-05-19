@@ -175,7 +175,7 @@ const Portfolio = () => {
           </div>
 
           {/* See More — navigates to /projects */}
-          {items.length > PREVIEW_COUNT && (
+          {/* {items.length > PREVIEW_COUNT && (
             <div className="flex justify-center mt-12" data-aos="fade-up">
               <Link
                 href="/projects"
@@ -199,7 +199,7 @@ const Portfolio = () => {
                 </svg>
               </Link>
             </div>
-          )}
+          )} */}
         </div>
       </section>
 

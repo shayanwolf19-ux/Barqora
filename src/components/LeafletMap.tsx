@@ -2,6 +2,7 @@
 
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
+// @ts-ignore: CSS import without type declarations
 import "leaflet/dist/leaflet.css";
 
 // Blue marker

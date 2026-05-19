@@ -4,24 +4,38 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden pt-32 pb-20">
-      <div className="absolute inset-0 -z-10">
-        <img src={heroBg.src} alt="" width={1920} height={1080} className="w-full h-full object-cover opacity-40" />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
-      </div>
+  <section id="home" className="relative min-h-screen flex items-center overflow-hidden pt-32 pb-20">
+  {/* GIF background — z-0, NOT negative */}
+  {/* GIF background — blended into the site color */}
+<div className="absolute inset-0 z-0 bg-background">
+  <img
+    src="/hero.gif"
+    alt=""
+    className="w-full h-full object-cover mix-blend-screen"
+    style={{
+      filter: "brightness(1.2) contrast(1.4) saturate(0.4)",
+      maskImage:
+        "radial-gradient(ellipse 75% 75% at 50% 45%, #000 35%, transparent 85%)",
+      WebkitMaskImage:
+        "radial-gradient(ellipse 75% 75% at 50% 45%, #000 35%, transparent 85%)",
+    }}
+  />
+  <div className="absolute inset-0 bg-gradient-to-b from-background/10 via-background/20 to-background/40" />
+</div>
 
       {/* Floating orbs */}
-      <div className="absolute top-1/4 -left-32 w-96 h-96 rounded-full bg-primary/20 blur-3xl animate-glow-pulse" />
-      <div className="absolute bottom-1/4 -right-32 w-96 h-96 rounded-full bg-secondary/20 blur-3xl animate-glow-pulse" style={{ animationDelay: "1.5s" }} />
+     <div className="absolute top-1/4 -left-32 w-96 h-96 rounded-full bg-primary/20 blur-3xl animate-glow-pulse" />
+  <div className="absolute bottom-1/4 -right-32 w-96 h-96 rounded-full bg-secondary/20 blur-3xl animate-glow-pulse" style={{ animationDelay: "1.5s" }} />
 
-      <div className="container mx-auto px-6 relative">
+
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 rounded-full glass px-4 py-2 mb-8 animate-fade-in">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
             </span>
-            <span className="text-sm text-muted-foreground">Now booking Q3 — limited slots</span>
+            <span className="text-sm text-muted-foreground">BarQora — A Marketing Agency</span>
           </div>
 
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.05] mb-6 animate-fade-in-up">
