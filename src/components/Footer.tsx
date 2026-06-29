@@ -51,27 +51,82 @@ const Footer = () => {
         </div> */}
 
         {/* Main grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-12 gap-10 lg:gap-8 mb-16">
-          {/* Brand */}
-          <div className="col-span-2 lg:col-span-4">
-            <a href="#home" className="inline-flex items-center mb-5">
-              <img src={logo.src} alt="Barqora logo" className="h-12 w-auto object-contain drop-shadow-[0_0_16px_hsl(210_100%_55%/0.5)]" />
-            </a>
-            <p className="text-muted-foreground leading-relaxed max-w-sm mb-6">
-              A premium digital marketing agency engineering measurable growth for ambitious brands worldwide.
-            </p>
-            <div className="space-y-2.5 text-sm">
-              <a href="mailto:info.barqora@gmail.com" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
-                <Mail className="h-4 w-4 text-primary" /> info.barqora@gmail.com
-              </a>
-               <a href="tel:+923001234567" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
-    <Phone className="h-4 w-4 text-primary" /> +92 334 8582082
-  </a>
-              <div className="flex items-center gap-3 text-muted-foreground">
-                <MapPin className="h-4 w-4 text-primary" /> Sines,Nust H-12 Sector Islamabad
-              </div>
-            </div>
-          </div>
+<div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-12 gap-10 lg:gap-8 mb-16">
+  {/* Brand */}
+  <div className="col-span-2 lg:col-span-4">
+    <a href="#home" className="inline-flex items-center mb-5">
+      <img
+        src={logo.src}
+        alt="Barqora logo"
+        className="h-12 w-auto object-contain drop-shadow-[0_0_16px_hsl(210_100%_55%/0.5)]"
+      />
+    </a>
+
+    <p className="text-muted-foreground leading-relaxed max-w-sm mb-6">
+      A premium digital marketing agency engineering measurable growth for ambitious brands worldwide.
+    </p>
+
+    <div className="space-y-6 text-sm">
+      {/* Email */}
+      <a
+        href="mailto:info.barqora@gmail.com"
+        className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
+      >
+        <Mail className="h-4 w-4 text-primary" />
+        info.barqora@gmail.com
+      </a>
+
+      {/* Pakistan Office */}
+      <div>
+        <h5 className="font-semibold text-foreground mb-2">
+          🇵🇰 Pakistan Office
+        </h5>
+
+        <a
+          href="tel:+923348582082"
+          className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
+        >
+          <Phone className="h-4 w-4 text-primary" />
+          +92 334 8582082
+        </a>
+
+        <div className="flex items-start gap-3 text-muted-foreground mt-2">
+          <MapPin className="h-4 w-4 text-primary mt-1" />
+          <span>
+            SINES, NUST H-12 Sector,
+            <br />
+            Islamabad, Pakistan
+          </span>
+        </div>
+      </div>
+
+      {/* UK Office */}
+      <div>
+        <h5 className="font-semibold text-foreground mb-2">
+          🇬🇧 United Kingdom Office
+        </h5>
+
+        <a
+          href="tel:+447459405607"
+          className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
+        >
+          <Phone className="h-4 w-4 text-primary" />
+          +44 7459 405607
+        </a>
+
+        <div className="flex items-start gap-3 text-muted-foreground mt-2">
+          <MapPin className="h-4 w-4 text-primary mt-1" />
+          <span>
+            51 Charlecote Avenue
+            <br />
+            Leicester LE3 2SJ
+            <br />
+            United Kingdom
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
 
           {/* Services */}
           <div className="col-span-1 lg:col-span-3 lg:col-start-6">
